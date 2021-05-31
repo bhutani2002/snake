@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#board{
+    background: linear-gradient(gray, lightgray);
+    width: 700px; /*92vmin*/
+    height: 600px; /*90vmin*/
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+}
+.body{
+    background: url("https://i.ibb.co/FmM1KFc/s2.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #scoreBox{
+    position: absolute;
+    top: 9px;
+    right:100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 50px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: white;
+}
+
+.head{
+    background: linear-gradient(rgb(34,139,34),rgb(0,0,0));
+    border: 5px solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background: linear-gradient(brown,black);
+    border: 2px solid black;
+    border-radius: 14px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: 3px solid black;
+    border-radius: 8px;
+}
+#highestscorer{
+  position: absolute;
+  top: 660px;
+  right:0px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#t{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+  color: white;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+ #tex{
+  position: relative;
+}
+
+
+form{
+  
+  /* margin-bottom: 255px; */       /*Removed due to removal of the table*/
+  margin-left: 80px;
+  margin-right: 10px;       
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+label {
+    display: inline-block;
+    margin-bottom: 1em;
+    color: #848484;
+    margin-left: 25px;
+}
+input{
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 9px;
+  border: 3px solid black;
+  font-size: 18px;
+  padding: 1px;
+}
+form input {
+   display: block;
+}
+input:focus {
+     border: 2px solid darkgray;
+}
+th{
+  color: red;
+}
+td{
+  text-align: center;
+}
+caption{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+}
+button{
+  border-radius: 2px 2px 7px 7px;
+  font-size: 14px;
+  font-family: serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 6px;
+}
